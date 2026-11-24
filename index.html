@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d0b14">
+  <title>ecees · Confessions</title>
+  <meta name="description" content="Say it anonymously. Thoughts, compliments, stories and confessions from our class.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ecees Confessions">
+  <meta property="og:title" content="ecees Confessions | Say it anonymously">
+  <meta property="og:description" content="Say it anonymously. Thoughts, compliments, stories and confessions from our class.">
+  <meta property="og:image" content="https://ecees.github.io/confessions/image.jpg">
+  <meta property="og:image:alt" content="ecees Confessions - Say it anonymously.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ecees Confessions | Say it anonymously">
+  <meta name="twitter:description" content="Say it anonymously. Thoughts, compliments, stories and confessions from our class.">
+  <meta name="twitter:image" content="https://ecees.github.io/confessions/image.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">ecees<span>.</span></a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR CLASS · YOUR SPACE</p>
+      <h1>Say it <span>anonymously.</span></h1>
+      <p class="subheading">Thoughts, compliments, stories and confessions from our class.</p>
+    </section>
+
+    <section class="composer panel">
+      <label for="confession">Write your confession</label>
+      <textarea id="confession" maxlength="1000" placeholder="Type something..." rows="4"></textarea>
+      <div class="composer-bottom">
+        <span id="counter">0 / 1000</span>
+        <button id="postButton" class="button" type="button">Post confession <span aria-hidden="true">↗</span></button>
+      </div>
+      <p class="notice">ecees.github.io/confessions</p>
+      <p id="formMessage" class="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="feed-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE CLASS WALL</p>
+          <h2>Recent confessions</h2>
+        </div>
+        <button id="refreshButton" class="text-button" type="button">Refresh ↻</button>
+      </div>
+      <div id="feed" class="feed">
+        <div class="empty panel">Loading confessions…</div>
+      </div>
+    </section>
+    <footer>© 2026 ecees</footer>
+  </main>
+
+  <script type="module" src="app.js?v=5"></script>
+</body>
+</html>
