@@ -43,13 +43,13 @@ body{
   align-items:center;
   justify-content:center;
   padding:0 20px;
-  background:color-mix(in srgb, var(--panel) 85%, transparent);
-  backdrop-filter:blur(10px);
-  border-bottom:2px solid var(--blush-petal);
+  background:var(--blush-petal); 
+  border-bottom:2px solid var(--rosewood); 
   position:sticky;
   top:0;
   z-index:10;
 }
+
 
 .brand{
   font-family:"Fredoka",sans-serif;
@@ -201,7 +201,7 @@ textarea:focus,input:focus{
 .confession-text{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:14px;margin:0;font-weight:700}
 .empty{padding:25px;text-align:center;color:var(--muted);font-size:13px;font-weight:800}
 
-footer{text-align:center;color:var(--misty-sky);font-size:11px;font-weight:700;padding:35px 0 10px}
+footer{text-align:center;color:var(--midnight-lagoon);font-size:11px;font-weight:700;padding:35px 0 10px}
 
 /* ADMIN DASHBOARD STYLES */
 .admin-container{padding-top:40px}
