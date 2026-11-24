@@ -1,4 +1,4 @@
-<script type="module">
+
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
   // TODO: Add SDKs for Firebase products that you want to use
@@ -14,6 +14,4 @@
     appId: "1:717933612281:web:cda561edf02ea4ade3a628"
   };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
+  export const ADMIN_EMAIL = "gitprojects96@gmail.com";
