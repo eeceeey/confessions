@@ -35,6 +35,7 @@ body{
   /* Soft dotted pattern in Vanilla Cream */
   background-image: radial-gradient(var(--line) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .topbar{
