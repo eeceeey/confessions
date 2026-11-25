@@ -251,7 +251,26 @@ footer{text-align:center;color:var(--midnight-lagoon);font-size:11px;font-weight
   .section-heading h2{font-size:25px}
 }
 
-:focus:not(:focus-visible) {
-  outline: none;
-  box-shadow: none;
+/* Remove focus ring completely for mouse/touch, but keep for keyboard */
+button:focus, 
+a:focus, 
+input:focus, 
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
+
+/* Keep the pink glow ONLY for the text box */
+textarea:focus, 
+input:focus {
+  border-color: var(--blush-petal);
+  box-shadow: 0 0 0 4px #f7c8d355 !important;
+}
+
+/* Remove any default blue ring on buttons/links when clicked */
+button:focus:not(:focus-visible), 
+a:focus:not(:focus-visible),
+*:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
 }
