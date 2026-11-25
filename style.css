@@ -250,3 +250,8 @@ footer{text-align:center;color:var(--midnight-lagoon);font-size:11px;font-weight
   .timestamp{font-size:9px}
   .section-heading h2{font-size:25px}
 }
+
+:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
